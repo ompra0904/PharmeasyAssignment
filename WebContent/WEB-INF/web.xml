@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>TestSkeleton</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Test1</servlet-name>
+    <servlet-class>pharmeasy.controller.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test1</servlet-name>
+    <url-pattern>/UserControllerNew</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+     <description></description>
+    <display-name>Test2</display-name>
+    <servlet-name>Test2</servlet-name>
+    <servlet-class>pharmeasy.controller.MappingController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test2</servlet-name>
+    <url-pattern>/MappingControllerNew</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <jsp-file>/home.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>SignUp</servlet-name>
+    <jsp-file>/SignUp.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/SignUp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PatientDash</servlet-name>
+    <jsp-file>/patientdashboard.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PatientDash</servlet-name>
+    <url-pattern>/patientdashboard</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DoctorDash</servlet-name>
+    <jsp-file>/doctordashboard.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorDash</servlet-name>
+    <url-pattern>/doctordashboard</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PharmacistDash</servlet-name>
+    <jsp-file>/pharmacistdashboard.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PharmacistDash</servlet-name>
+    <url-pattern>/pharmacistdashboard</url-pattern>
+  </servlet-mapping>
+</web-app>
